@@ -1,0 +1,23 @@
+Name:                diagrams-osm
+Version:             0.1
+Synopsis:            Build diagrams from Open Street Map data.
+-- Description:         
+License:             BSD3
+License-file:        LICENSE
+Author:              Ryan Yates
+Maintainer:          ryates@cs.rochester.edu
+-- Copyright:           
+Category:            Graphics
+Build-type:          Simple
+-- Extra-source-files:  
+Cabal-version:       >=1.2
+
+Library
+  Exposed-modules:     Diagrams.OSM
+  Build-depends:       base >= 4.3 && < 4.6,
+                       containers >= 0.4 && < 0.5,
+                       data-lens >= 2.0 && < 2.1,
+                       diagrams-core >= 0.5 && < 0.6,
+                       diagrams-lib  >= 0.5 && < 0.6,
+                       OSM >= 0.6.4 && < 0.7
+  Hs-source-dirs:      src                       
